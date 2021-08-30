@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Sokoban" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-03T17:18:30" hostname="WORKSHOP" time="0.029">
+  <properties/>
+  <testcase name="movesApply1()" classname="Sokoban" time="0.021"/>
+  <testcase name="movesApply2()" classname="Sokoban" time="0.004"/>
+  <testcase name="movesApply3()" classname="Sokoban" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

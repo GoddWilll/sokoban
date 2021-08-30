@@ -1,0 +1,73 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+
+    }
+    dependencies {
+        classpath 'org.openjfx:javafx-plugin:0.0.9'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+
+
+group 'sokoban'
+apply plugin: 'org.openjfx.javafxplugin'
+apply plugin: 'java'
+
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.google.guava:guava:29.0-jre'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile 'club.minnced:java-discord-rpc:2.0.2'
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'maingame.MainFX'
+}
+
+test {
+    useTestNG()
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+
+}
+
+
+javafx {
+    version = "16-ea+1"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media']
+}
+
+task loadFileXsb(type : JavaExec){
+    description = "Lance le jeu en fonction du fichier .xsb spécifié"
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    main = 'maingame.LogicApp'
+}
+
+task applyMoves(type : JavaExec){
+    description = "Permet d'appliquer un .mov à un fichier"
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    main = 'maingame.Sokoban'
+}
+
