@@ -5,4 +5,4 @@ I'll explain more about how the game works and how you can use it the proper way
 I can't do it right now, but someday :)
 # requirements
 You need to have Java and ffmpeg installed on your computer.
-The game is mainly made for Linux users, you may have some trouble with Windows.
+The game is mainly made for Windows users, you may have some trouble with Linux.
