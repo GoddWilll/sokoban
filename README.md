@@ -5,7 +5,7 @@ I'll explain more about how the game works and how you can use it the proper way
 I can't do it right now, but someday :)
 
 # appearance 
-![Alt Text](https://gifyu.com/image/Sbfmc)
+![Alt Text](https://s10.gifyu.com/images/soko2.gif)
 
 # requirements
 You need to have Java and ffmpeg installed on your computer.
