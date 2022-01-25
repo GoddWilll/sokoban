@@ -7,6 +7,8 @@ I can't do it right now, but someday :)
 # Appearance 
 ![Alt Text](https://i.ibb.co/02KbkzB/ezgif-3-a2b5f14d84.gif)
 
+# Features
+Coming soon :)
 
 # Requirements
 You need to have Java and ffmpeg installed on your computer.
